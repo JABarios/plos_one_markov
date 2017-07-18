@@ -1,0 +1,31 @@
+commit 956b4d044906b3f6e110559e65096b3c1a0fd283
+Author: Santiago Ezquerro <sezquerro@umh.es>
+Date:   Thu Jan 12 12:50:05 2017 +0100
+
+    changes iwinac
+
+diff --git a/IWINAC_2017/iwinac_2017.tex b/IWINAC_2017/iwinac_2017.tex
+index f7055e8..cd04186 100644
+--- a/IWINAC_2017/iwinac_2017.tex
++++ b/IWINAC_2017/iwinac_2017.tex
+@@ -57,10 +57,17 @@ All participants were comfortably seated at a desk while EEG was recorded from 4
+ 
+ \subsection{Experimental design}
+ 
+-Before started the task with the hand-exoskeleton, all participants must perform a calibration and initial contact with the BCI system. For the EEG calibration, the subject had to think the hand-close movement using the motor-imagery. As a visual aid the feedback was shown. When the participant thought the grasping movement, the "Pac-Man" (visual feedback) started to close. However, if the "Pac-Man" started to close without motor-instruction, the subject could abort the movement looking left.
++Before started the task with the hand-exoskeleton, all participants must perform a calibration and initial contact with the BCI system. For the EEG calibration, the subject had to think the hand-close movement using the motor-imagery. As a visual aid the feedback was shown. When the participant thought the grasping movement, the "Pac-Man" (\textit{visual feedback}) started to close. However, if the "Pac-Man" started to close without motor-instruction, the subject could abort the movement looking left. With these calibration has calculated the subject's threshold.
+ 
+-After calibration, all participants controlled the BNCI system under two conditions. During condition 1, EEG was used, while during condition 2 merged EEG and EOG signals were used for BNCI control of the hand exoskeleton. During EEG calibration, either a red square (indicating to rest) or green square (indicating to engage in motor-imagery) was shown. For EOG calibration, participants were asked to either look to the left (blue arrow to the left) or to the right (blue arrow to the right). For evaluation of BNCI control, a visual cue indicated not to move (red square) or to close the hand exoskeleton (green square) over 6 minutes in a random order. Visual indications were separated by inter-trial-intervals (ITIs) of 4-6 sec.
+-To identify the optimal frequency for detection of motor-imagery related desynchronization of sensorimotor rhythms (SMR, 8-15Hz) of each participant, a power spectrum estimation (autoregressive model of order 16 using the Yule–Walker algorithm) was performed for each incoming sample, selecting the frequency that showed largest even-related desynchronization (ERD) during motor imagery and event-related synchronization (ERS) during rest [13, 14] recorded from C3. Based on the maximum values for ERD and ERS, a discrimination threshold was set at two-standard deviations above average SMR-ERD variance at rest, and used for later online BNCI control.
++If this calibration has been completed, all participants performed a initial contact with hand-exoskeleton and BCI system. For that, the participants trained the movements with the hand-exoskeleton and eyetracking tool. After the subject has been trained with the devices, the trial was started. These trial consisted a sequences of movements executed through EEG and EOG. Firstly, the subject selected the target with the eyetracking devices, to indicate the exoskeleton movement, the participant should look right. When the hand is near at the glass, the subject orders the grasping using the motor-imagery with EEG. The next step was drink movement. These movement was executed through EOG (look right). To allow the glass over the desk, the participant used the EOG. Finally, the participant used the EEG to open hand and release the glass. 
++
++
++
++
++
++
++%After calibration, all participants controlled the BNCI system under two conditions. During condition 1, EEG was used, while during condition 2 merged EEG and EOG signals were used for BNCI control of the hand exoskeleton. During EEG calibration, either a red square (indicating to rest) or green square (indicating to engage in motor-imagery) was shown. For EOG calibration, participants were asked to either look to the left (blue arrow to the left) or to the right (blue arrow to the right). For evaluation of BNCI control, a visual cue indicated not to move (red square) or to close the hand exoskeleton (green square) over 6 minutes in a random order. Visual indications were separated by inter-trial-intervals (ITIs) of 4-6 sec.
++%To identify the optimal frequency for detection of motor-imagery related desynchronization of sensorimotor rhythms (SMR, 8-15Hz) of each participant, a power spectrum estimation (autoregressive model of order 16 using the Yule–Walker algorithm) was performed for each incoming sample, selecting the frequency that showed largest even-related desynchronization (ERD) during motor imagery and event-related synchronization (ERS) during rest [13, 14] recorded from C3. Based on the maximum values for ERD and ERS, a discrimination threshold was set at two-standard deviations above average SMR-ERD variance at rest, and used for later online BNCI control.
+ 
+ 
+ \section{Results}
